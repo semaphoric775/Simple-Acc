@@ -1,0 +1,15 @@
+@0000 0B05    // LOAD  11   acc = 0010
+@0001 0C01    // ADD   12   acc = 0001 + 0010 = 0011
+@0002 0A02    // OR   10   acc = 0011 | 0100 = 0111
+@0003 0d06    // STORE 13   Store 0111 to 0x000d
+@0004 0d09    // MULL 13 acc =  acc * 0x7 = 49 = 110001
+@0005 0D0A    // NEG acc = 1110 => ignore address.
+@0006 0604    // JUMPZ  6  => alu not zero so nothing happens.
+@0007 0e06    // STORE 14
+@0008 0804    // JMP 08 // this will halt the code.
+@0009 0000
+@000a 0004    //A data = 4
+@000b 0002    //B data = 2
+@000c 0001    //C data = 1
+@000d 0000    //Store value
+@000e 0000    //Store value  => all goes well location shoudl have 0xE
