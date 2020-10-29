@@ -1,5 +1,6 @@
 # Simple-Acc
 A simple RISC computer expressed in Verilog and System Verilog.
+![Synthesized Hardware](rtl_viewer.jpeg)
 
 ## Description
 This project implements a simple computer in Verilog and System Verilog.  Programs are loaded in through the testbench directly into RAM, and all instructions have the following format
